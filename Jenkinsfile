@@ -31,7 +31,7 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		sh 'cp /root/.jenkins/Assignment1/target/gamutkart.war home/staragile/Distros/apache-tomcat-9.0.85/webapps'
+		sh 'sshpass scp staragile target/gamutkart.war staragile@172.31.84.250:/home/staragile/Distros/apache-tomcat-9.0.85/webapps'
 	}
     }
 }
