@@ -8,12 +8,6 @@ pipeline {
 	    	}
         }
 
-        stage('Build') {
-            steps {
-                sh 'mvn clean install'
-            }
-        }
-
 	stage ('Compile') {
 	   steps {
 		sh 'mvn clean compile'
