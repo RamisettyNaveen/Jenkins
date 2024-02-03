@@ -31,7 +31,7 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		sh 'cp target/gamutkart.war home/staragile/Distros/apache-tomcat-9.0.85/webapps'
+		sh 'cp /root/.jenkins/Assignment1/target/gamutkart.war home/staragile/Distros/apache-tomcat-9.0.85/webapps'
 	}
     }
 }
