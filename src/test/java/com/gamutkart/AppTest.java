@@ -1,4 +1,4 @@
-package com.flipkart;
+package com.gamutkart;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
